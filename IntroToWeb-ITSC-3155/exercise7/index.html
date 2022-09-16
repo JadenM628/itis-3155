@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise 7</title>
+    </head>
+    <body>
+        <input id="name-input" type="text" placeholder="Enter your name" />
+        <button id="my-button">Click Me</button>
+        <!--*1st line = declaring myButton variable -->
+        <!--*2nd line = declaring name Input variable-->
+        <!--*3rd line = make the myButton when clicked functionable-->
+        <!--*4th line = if input has value run next line-->
+        <!--*5th line = make alert that displays 'hello, input'-->
+        <script>
+            
+            var myButton = document.querySelector('#my-button');
+            var nameInput = document.querySelector('#name-input');
+
+        myButton.addEventListener('click', function () {
+        if (nameInput.value !== '') {
+        alert('Hello ' + nameInput.value);
+        }
+         });
+</script>
+    </body>
+</html>
